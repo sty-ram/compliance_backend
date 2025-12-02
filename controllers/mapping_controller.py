@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify, session
 from models.mappings import MAPPINGS
 from services.db_service import get_dummy_data_from_db
 mapping = Blueprint("mapping", __name__)
+print("MAPPING BLUEPRINT LOADED")
 
 @mapping.route("/get_mappings", methods=["POST"])
 def get_map():

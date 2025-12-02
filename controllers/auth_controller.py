@@ -3,6 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from services.db_service import create_user, fetch_user
 
 auth = Blueprint("auth", __name__)
+print("AUTH BLUEPRINT LOADED")
 
 @auth.route("/signup", methods=["POST"])
 def signup():
